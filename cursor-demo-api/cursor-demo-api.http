@@ -1,6 +1,28 @@
-@cursor_demo_api_HostAddress = http://localhost:5005
+@cursor_demo_api_HostAddress = http://localhost:5220
 
 GET {{cursor_demo_api_HostAddress}}/weatherforecast/
 Accept: application/json
+
+###
+
+GET {{cursor_demo_api_HostAddress}}/api/employees
+Accept: application/json
+
+###
+
+GET {{cursor_demo_api_HostAddress}}/api/employees/1
+Accept: application/json
+
+###
+
+POST {{cursor_demo_api_HostAddress}}/api/employees
+Content-Type: application/json
+
+{
+  "name": "Ada Lovelace",
+  "age": 36,
+  "salary": 125000.50,
+  "phoneNumber": "555-555-0100"
+}
 
 ###
